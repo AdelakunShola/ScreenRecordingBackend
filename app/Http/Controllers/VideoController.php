@@ -29,7 +29,7 @@ class VideoController extends Controller
 
         // Upload video to local storage (assuming 'videos' is the disk name)
         $path = $file->storeAs('videos', $fileName, 'videos');  // Use storeAs to set a specific filename
-        $fileLink = Storage::url($path);
+        $fileLink = asset(Storage::url($path));
 
         // Handle optional thumbnail upload to local storage
         $thumbnailPath = null;
