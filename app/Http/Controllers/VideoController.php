@@ -77,7 +77,7 @@ class VideoController extends Controller
         $video = Video::create([
             'title' => $request->input('title'),
             'file_name' => $publicId, // Store Cloudinary public ID
-            'file_link' => $fileLink,
+            'file_link' => 'https://screenrecord.onrender.com' . $fileLink,
             'thumbnail' => $thumbnailPath,
             'description' => $request->input('description'),
             'file_size' => $fileSize,
