@@ -7,7 +7,9 @@ use App\Http\Controllers\VideoController;
 
 
 
-
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+  return $request->user();
+});
 
 Route::prefix('')->group(function () {
  
