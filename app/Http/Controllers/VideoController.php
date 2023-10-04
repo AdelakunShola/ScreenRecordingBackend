@@ -33,7 +33,7 @@ class VideoController extends Controller
     // Get the total size of the file
     $totalSize = Storage::disk('local')->size('temp/' . $uniqueIdentifier);
 
-    // Initialize Cloudinary public ID and file link
+    // Initialize Cloudinary public ID and file link 
     $publicId = null;
     $fileLink = null;
 
