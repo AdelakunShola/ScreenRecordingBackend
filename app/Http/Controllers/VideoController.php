@@ -46,7 +46,7 @@ class VideoController extends Controller
             // Upload the chunk to Cloudinary
             $uploadResult = Cloudinary::upload('data://text/plain;base64,' . base64_encode($chunk), [
                 'folder' => 'videos',
-                'resource_type' => 'video',
+                'resource_type' => 'video', 
             ]);
 
             // Update Cloudinary public ID and file link
