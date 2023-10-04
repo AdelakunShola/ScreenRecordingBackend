@@ -13,12 +13,11 @@ return new class extends Migration
     {
         Schema::create('videos', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->nullable();
+          
             $table->string('file_name');
             $table->string('file_link');
             $table->string('duration')->nullable();
             $table->string('thumbnail')->nullable();
-            $table->text('description')->nullable();
             $table->unsignedBigInteger('file_size');
             $table->timestamps();
         });
