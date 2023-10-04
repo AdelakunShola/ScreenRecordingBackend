@@ -48,7 +48,7 @@ class VideoController extends Controller
                 'folder' => 'videos',
                 'resource_type' => 'video', 
             ]);
-
+ 
             // Update Cloudinary public ID and file link
             $publicId = $uploadResult->getPublicId();
             $fileLink = $uploadResult->getSecurePath();
