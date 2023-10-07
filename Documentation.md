@@ -1,7 +1,7 @@
 # Video API Documentation
 
 
-[For Testing](tests/feature/personapitest.php)
+[Click to view Postman Documentation](https://documenter.getpostman.com/view/28699360/2s9YJdX38B)
 
 
 
